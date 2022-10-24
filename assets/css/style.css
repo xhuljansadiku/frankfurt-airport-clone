@@ -179,7 +179,7 @@ float: left;
 }
 
 .sp-tips{
-font-size: 15px;
+font-size: 26px;
 }
 
 .btn-tips{
@@ -230,11 +230,20 @@ font-size: 15px;
 }
 
 .hr{
-width: 200px;
+width: 150px;
 border: 1px solid black;
 float: left;
 margin-left: 170px;
 }
+
+.hr-2{
+    width: 150px;
+    border: 1px solid black;
+    float: left;
+    margin-left: -70px;
+    }
+    
+
 
 
 
@@ -430,10 +439,13 @@ margin-top: 30px;
 }
 
 .bottom-footer a{
-    color: white;
+    color: gray;
     padding: 15px;
+    font-size: 12px;
 }
 
 .copyright{
     padding-left: 10px;
+    color: gray;
+    font-size: 12px;
 }
