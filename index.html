@@ -30,7 +30,8 @@
         <div class="navbar">
             <nav>
                 <ul>
-                    <li>Flights & Transfer <i class="fa-solid fa-chevron-down"></i></li>
+                    <li>Flights & Transfer <i class="fa-solid fa-chevron-down"></i>
+                    </li>
                     <li>Transport & Parking <i class="fa-solid fa-chevron-down"></i></li>
                     <li>Airport Guide <i class="fa-solid fa-chevron-down"></i></li>
                     <li>Services <i class="fa-solid fa-chevron-down"></i></li>
@@ -39,130 +40,222 @@
         </div>
     </div>
 
-    <div class="div-header-img">
+    <div class="header-img">
         <img src="./assets/images/fra-1255_1280x520.jpg">
-        <h1>Welcome to Frankfurt Airport</h1>
+        <h1><i>Welcome to Frankfurt Airport</i></h1>
+
+        <div class="form">
+
+            <form>
+                <h3><i>Flight Search</i></h3>
+            <div class="form-inside">
+                <input  type="radio" id="departures" name="airport" value="departures">
+                <label for="departures">Departures</label>
+                <input type="radio" id="arr" name="airport" value="arrivals">
+                <label for="arrivals">Arrivals</label>
+                <input type="search" id="search" name="search" value="" placeholder="Airlane,Flight Number, Airport">
+                <input type="datetime-local" id="time" name="datetime" value="Time">
+                <input class="btn" type="button" value=">">
+            </div>
+    
+            <div class="tips">
+                 <i>
+                <p class="tips-text"> 
+                    <span class="sp-tips">Tips for your trip</span>
+                    <br>
+                    Although we do everything possible to prepare for the crowds, there may be waits at various points of your journey through the airport. We therefore ask you to help us speed up the process by thoroughly preparing for your outbound and return trips. 
+                </p>
+            </i>
+                <button class="btn-tips">To <br> your <br> travel <br> guide</button>
+            </div>
+            
+        </div>
+    
+        
+            
+        </form>
+
     </div>
-
-    <div class="form">
-
-        <form>
-        <div>
-        <h3><i>Flight Search</i></h3>
-            <input type="radio" id="departures" name="airport" value="departures">
-            <label for="departures">Departures</label>
-        </div>
-
-        <div>
-            <input type="radio" id="arr" name="airport" value="arrivals">
-            <label for="arrivals">Arrivals</label>
-            <input type="search" id="search" name="search" value="" placeholder="Airlane,Flight Number, Airport">
-            <input type="datetime-local" name="datetime">
-            <input class="btn" type="button" value=">">
-        </div>
-    </div>
-
-        <div class="tips">
-            <h1>Tips for your trip</h1>
-            <p>Although we do everything possible to prepare for the crowds, there may be waits at various points of your journey through the airport. We therefore ask you to help us speed up the process by thoroughly preparing for your outbound and return trips.</p>
-            <button>To your travel guide</button>
-        </div>
-    </form>
 
     <div class="checkflight">
-        <h1>Current waiting times of your flight</h1>
-        <p>Please enter flight number and check waiting times.</p>
+        <p class="check-text"> 
+        <span class="sp-check-fl">Current waiting times of your flight</span> 
+        <br>
+        <br>
+        Please enter flight number and check waiting times.
+        </p>
+        <div class="search-fl">
         <input type="search" id="flight-number" name="flight-number" value="" placeholder="Flight Number" >
         <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
     </div>
 
+    <hr class="hr"> 
+    <br>
+    <i><h1 class="h1-out">Helpful travel information at a glance</h1></i> 
     <div class="inforamation">
-        <hr>
-        <h1>Helpful travel information at a glance</h1>
+        <div class="info-1">
+        
         <ul>
-            <li>Information on Covid-19</li>
-            <li>Airlanes A-Z</li>
-            <li>Travel Services</li>
-            <li>Restaurants</li>
-            <li>Cupons</li>
-        </ul>
+            <li class="info-hover">
+            <i class="fa-solid fa-virus"></i> Information on Covid-19   
+            <i class="fa-solid fa-arrow-right"></i>
+            </li>
 
+            <li class="info-hover">
+            <i class="fa-solid fa-plane-arrival"></i> 
+            Airlanes A-Z
+            <i class="fa-solid fa-arrow-right"></i>
+            </li>
+
+            <li class="info-hover">
+            <i class="fa-solid fa-user-tie"></i>
+            Travel Services
+            <i class="fa-solid fa-arrow-right"></i>
+            </li>
+
+            <li class="info-hover">
+            <i class="fa-solid fa-burger"></i>
+            Restaurants
+            <i class="fa-solid fa-arrow-right"></i>
+            </li>
+
+            <li class="info-hover">
+            <i class="fa-solid fa-barcode"></i>
+            Cupons
+            <i class="fa-solid fa-arrow-right"></i>
+            </li>
+        </ul>
+    </div>
+
+    <div class="info-2">
         <ul>
-            <li>Accessible Travel</li>
-            <li>Parking</li>
-            <li>Shopping</li>
-            <li>Online Shop</li>
-        </ul>
+            <li class="info-hover">
+            <i class="fa-brands fa-accessible-icon"></i>
+            Accessible Travel
+            <i class="fa-solid fa-arrow-right"></i>
+            </li>
 
+            <li class="info-hover">
+            <i class="fa-solid fa-square-parking"></i>
+            Parking
+            <i class="fa-solid fa-arrow-right"></i>
+            </li>
+
+            <li class="info-hover">
+            <i class="fa-solid fa-store"></i>
+            Shopping
+            <i class="fa-solid fa-arrow-right"></i>
+            </li>
+
+
+            <li class="info-hover">
+            <i class="fa-solid fa-bag-shopping"></i>
+            Online Shop
+            <i class="fa-solid fa-arrow-right"></i>
+            </li>
+        </ul>
+    </div>
     </div>
 
     <div class="regulations">
-        <h1>What are the current regulations at my destination?</h1>
-        <p><i>Required documents, visa regulations and entry requirements</i></p>
-        <button>To the regulations</button>
+        <i>
+        <span class="sp-reg">What are the current regulations at my destination?</span>
+        <p class="reg-text">Required documents, visa regulations and entry requirements</p>
+        </i>
+        <button class="btn-reg">To the regulations</button>
     </div>
 
-    <div class="container">
+    <div class="latest-text">
     <div>
-        <hr>
+        <hr class="hr">
+        <br>
+        <i>
         <h1>Latest FRA-News</h1>
+    </i>
         <p>At a glance</p>
     </div>
     </div>
 
     <div class="latest">
         <div class="discount">
-            <img src="./assets/images/Gutschein Paradies2022.jpg" alt="5% parking discount">
+            <img class="img-latest" src="./assets/images/Gutschein Paradies2022.jpg" alt="5% parking discount">
             <h4>5% parking discount</h4>
-            <p>Advantageous parking at Frankfurt Airport: Benefit until October 31st 2022 from booking online and save an additional 5% with your online voucher*: Paradise2022</p>
+            <p>Advantageous parking at Frankfurt Airport: Benefit until Oct. 31st 2022 from booking online and save an additional 5% with your online voucher*: Paradise2022</p>
             <hr>
-            <p>To the parking voucher offer <span>-></span></p>
+             <br>
+            <p class="latest-link">To the parking voucher offer  
+                <i class="fa-solid fa-arrow-right"></i>
+            </p>
         </div>
 
         <div class="hausmann">
-            <img src="./assets/images/Hausmanns 1920x1080.jpg" alt="New: 10 years of Hausmann's">
+            <img class="img-latest" src="./assets/images/Hausmanns 1920x1080.jpg" alt="New: 10 years of Hausmann's">
             <h4>New: 10 years of Hausmann's</h4>
             <p>Hausmann’s serves German food in a mix of bistro and brasserie. Guests enjoy the home cooking atmosphere as well as the great taste of German cuisine.</p>
             <hr>
-            <p>To Hausmann's <span>-></span></p>
+            <br>
+            <p class="latest-link">To Hausmann's 
+                <i class="fa-solid fa-arrow-right"></i>
+            </p>
         </div>
 
         <div class="electric-car">
-            <img src="./assets/images/E-Carsharing 1920 x 1080.jpg" alt="New: car sharing goes electric">
+            <img class="img-latest" src="./assets/images/E-Carsharing 1920 x 1080.jpg" alt="New: car sharing goes electric">
             <h4>New: car sharing goes electric</h4>
             <p>Two new providers enhance e-mobility at FRA and offer a flexible alternative to your own car, cab or public transport. The e-car sharing area is located at Terminal 1, P2.</p>
             <hr>
-            <p>To car sharing <span>-></span></p>
+            <br>
+            <p class="latest-link">To car sharing  
+                <i class="fa-solid fa-arrow-right"></i>
+            </p>
         </div>
     </div>
 
     <div class="fr-on-shop">
-        <p>Frankfurt Airport Online Shop</p>
-        <a href="">
-            <img src="./assets/images/ClickCollect_EN_inkl.Subline.jpg">
+        <p class="shop-text">Frankfurt Airport Online Shop</p>
+        <a href="#">
+            <img class="shop-img" src="./assets/images/ClickCollect_EN_inkl.Subline.jpg">
         </a>
     </div>
 
     <div class="footer">
         <ul class="social-media">
-            <li><i class="fa-brands fa-facebook-f"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-youtube"></i></li>
+            <a href="#"><li><i class="fa-brands fa-facebook-f"></i></li>
+            </a>
+            <a href="#"><li><i class="fa-brands fa-twitter"></i></li>
+            </a>
+            <a href="#"><li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            <a href="#"><li><i class="fa-brands fa-youtube"></i></li>
+            </a>
         </ul>
 
+        <div class="other-links">
+
         <div class="useful-links">
+            <h2 class="h2-footer"><i>Useful Links</i></h2>
             <ul>
-                <li>Frankfurt Airport Online Shop</li>
-                <li>Flights</li>
-                <li>Getting to the Airport</li>
-                <li>Accessible Travel</li>
+                <li>Frankfurt Airport Online Shop
+                <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>Flights
+                <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>Getting to the Airport
+                <i class="fa-solid fa-arrow-right"></i>
+                </li>
+                <li>Accessible Travel
+                <i class="fa-solid fa-arrow-right"></i>
+                </li>
                 <li>Frankfurt Airport Parking
+                <i class="fa-solid fa-arrow-right"></i>
                 </li>
             </ul>
         </div>
 
         <div class="infromation-footer">
+            <h2 class="h2-footer"><i>Information</i></h2>
             <ul>
                 <li>Information on Covid-19</li>
                 <li>Download Center</li>
@@ -175,6 +268,7 @@
         </div>
 
         <div class="b2b">
+            <h2 class="h2-footer"><i>B2B</i></h2>
             <ul>
                 <li>Fraport AG</li>
                 <li>Airlines</li>
@@ -185,17 +279,26 @@
             </ul>
         </div>
 
+    </div>
+
+        <div class="bottom-footer">
+            <a href="#">Legal Notice</a>
+            <a href="#">GTC</a>
+            <a href="#">Data Protection Statement</a>
+            <a href="#">Disclaimer</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="copyright">&copy; 2004-2022 Fraport AG Frankfurt Airport Services Worldwide</p> 
+        </div>
+
 
     </div>
 
-    <div class="bottom-footer">
-        <a href="#">Legal Notice</a>
-        <a href="#">GTC</a>
-        <a href="#">Data Protection Statement</a>
-        <a href="#">Disclaimer</a>
-
-        &copy; 2004-2022 Fraport AG Frankfurt Airport Services Worldwide
-    </div>
+    
 
 
 
