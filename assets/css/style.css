@@ -169,7 +169,7 @@ float: left;
     margin-top: 50px;
     display: flex;
     width: 1000px;
-    height: 150px;
+    height: 170px;
     color: white;
     background-color: rgba(228,130,26,255);
 }
@@ -205,9 +205,9 @@ font-size: 26px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: blue;
+    background-color: rgba(0,0,145,255);
     width: 1220px;
-    height: 100px;
+    height: 110px;
     margin-top:  300px;
     padding: 40px 30px 40px 30px;
     color: white;
@@ -294,7 +294,7 @@ margin-left: 170px;
     margin: 0px auto;
     display: flex;
     width: 1000px;
-    height: 150px;
+    height: 120px;
     color: white;
     background-color: #82af32;;
 }
@@ -315,7 +315,7 @@ margin-left: 50px;
     width: 200px;
     height: 50px;
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 18px;
     background-color: white;
     color: black;
@@ -382,7 +382,7 @@ margin-top: 30px;
     background-color: rgba(0,0,145,255);
     color: white;
     display: flex;
-    height: 600px;
+    height: 687px;
     flex-direction: column;
     width: 1000px;
     margin: 0px auto;
@@ -391,6 +391,7 @@ margin-top: 30px;
 .social-media{
     display: flex;
     flex-direction: row;
+    padding-left: 120px;
     
 }
 .social-media li{
