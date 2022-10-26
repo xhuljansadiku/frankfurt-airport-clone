@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Fav Icon-->
     <link rel="shortcut icon" type="image/png" href="../Assests/Images/favicon-fra.png"/>
     <!--Css-->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
     <!--Font Awsome-->
     <link rel="stylesheet" href="./assets/css/all.min.css">
+
     <title>Frankfurt Airport</title>
 
 </head>
 <body>
-    <div class="container">
+
+
+<div class="container">
+
+
     <div class="header">
+
         <div class="logo-top">
             <img class="logo" src="./assets/images/Frankfurt_Airport_Logo.svg.png">
         </div>
         
-        <div class="icon-top">
+    <div class="lang-nav">
+        <div class="icons-top">
                 <ul><i class="fa-solid fa-globe"></i></ul>
                 <ul><i class="fa-solid fa-magnifying-glass"></i></ul>
                 <ul><i class="fa-regular fa-user"></i></ul>
         </div>
-    </div>
+    
 
     <div class="navigation-bar">
         <div class="navbar">
@@ -40,51 +49,57 @@
             </nav>
         </div>
     </div>
+    </div>
+    </div>
 
-    <div class="header-img">
+
+    <div class="header-img-form">
         <img src="./assets/images/fra-1255_1280x520.jpg">
-        <h1><i>Welcome to Frankfurt Airport</i></h1>
+            <h1>
+                <i>Welcome to Frankfurt Airport</i>
+            </h1>
 
         <div class="form">
-
             <form>
-                <h3><i>Flight Search</i></h3>
-            <div class="form-inside">
-                <input  type="radio" id="departures" name="airport" value="departures">
-                <label for="departures">Departures</label>
-                <input type="radio" id="arr" name="airport" value="arrivals">
-                <label for="arrivals">Arrivals</label>
-                <input type="search" id="search" name="search" value="" placeholder="Airlane,Flight Number, Airport">
-                <input type="datetime-local" id="time" name="datetime" value="Time">
-                <input class="btn" type="button" value=">">
-            </div>
+                <div class="flight-serach-parking">
+                    <h4 class="flight-serach">
+                        <i>Flight Search</i>
+                    </h4>
+
+                    <h4 class="parking">
+                        <i>Parking Reseration</i>
+                    </h4>
+                </div>
+
+                <div class="form-inside">
+                    <input  type="radio" id="departures" name="airport" value="departures">
+                    <label for="departures">Departures</label>
+                    <input type="radio" id="arr" name="airport" value="arrivals">
+                    <label for="arrivals">Arrivals</label>
+                    <input type="search" id="search" name="search" value="" placeholder="Airlane,Flight Number,Airport">
+                    <input type="datetime-local" id="time" name="datetime" value="Time">
+                    <input class="btn" type="button" value=">">
+                </div>
     
-            <div class="tips">
-                 <i>
-                <p class="tips-text"> 
-                    <span class="sp-tips">Tips for your trip</span>
-                    <br>
-                    Although we do everything possible to prepare for the crowds, there may be waits at various points of your journey through the airport. We therefore ask you to help us speed up the process by thoroughly preparing for your outbound and return trips. 
-                </p>
-            </i>
-                <button class="btn-tips">To <br> your <br> travel <br> guide</button>
-            </div>
-            
+                <div class="tips">
+                    <i>
+                        <p class="tips-text"> 
+                            <span class="sp-tips">Tips for your trip</span>
+                             <br>
+                            Although we do everything possible to prepare for the crowds, 
+                            there may be waits at various points of your journey through
+                            the airport. We therefore ask you to help us speed up the 
+                            process by thoroughly preparing for your outbound and return trips. 
+                        </p>
+                    </i>
+                    <button class="btn-tips">To <br> your <br> travel <br> guide</button>
+                </div>
         </div>
-    
-        
-            
         </form>
 
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
     <div class="checkflight">
         <p class="check-text"> 
         <span class="sp-check-fl">Current waiting times of your flight</span> 
@@ -93,79 +108,91 @@
         Please enter flight number and check waiting times.
         </p>
         <div class="search-fl">
-        <input type="search" id="flight-number" name="flight-number" value="" placeholder="Flight Number" >
+        <input type="search" id="flight-number" name="flight-number" value="" placeholder="Flightnumber" >
         <i class="fa-solid fa-magnifying-glass"></i>
         </div>
     </div>
 
+
+    <br>
     <hr class="hr"> 
     <br>
-    <i><h1 class="h1-out">Helpful travel information at a glance</h1></i> 
+    
+
     <div class="inforamation">
-        <div class="info-1">
+
+        <i>
+            <h1 class="h1-out">Helpful travel information at a glance</h1>
+        </i> 
         
+        <div class="info">
+            <div class="info-1">
         <ul>
             <li class="info-hover">
             <i class="fa-solid fa-virus"></i> Information on Covid-19   
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right sh"></i>
             </li>
 
             <li class="info-hover">
             <i class="fa-solid fa-plane-arrival"></i> 
             Airlanes A-Z
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right sh"></i>
             </li>
 
             <li class="info-hover">
             <i class="fa-solid fa-user-tie"></i>
             Travel Services
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right sh"></i>
             </li>
 
             <li class="info-hover">
             <i class="fa-solid fa-burger"></i>
             Restaurants
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right sh"></i>
             </li>
 
             <li class="info-hover">
             <i class="fa-solid fa-barcode"></i>
             Cupons
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right sh"></i>
             </li>
         </ul>
     </div>
+        <div class="info-2">
+            <ul>
+                <li class="info-hover">
+                <i class="fa-brands fa-accessible-icon"></i>
+                Accessible Travel
+                <i class="fa-solid fa-arrow-right sh"></i>
+                </li>
+    
+                <li class="info-hover">
+                <i class="fa-solid fa-square-parking"></i>
+                Parking
+                <i class="fa-solid fa-arrow-right sh"></i>
+                </li>
+    
+                <li class="info-hover">
+                <i class="fa-solid fa-store"></i>
+                Shopping
+                <i class="fa-solid fa-arrow-right sh"></i>
+                </li>
+    
+    
+                <li class="info-hover">
+                <i class="fa-solid fa-bag-shopping"></i>
+                Online Shop
+                <i class="fa-solid fa-arrow-right sh"></i>
+                </li>
+            </ul>
+        </div>
 
-    <div class="info-2">
-        <ul>
-            <li class="info-hover">
-            <i class="fa-brands fa-accessible-icon"></i>
-            Accessible Travel
-            <i class="fa-solid fa-arrow-right"></i>
-            </li>
+        </div>
 
-            <li class="info-hover">
-            <i class="fa-solid fa-square-parking"></i>
-            Parking
-            <i class="fa-solid fa-arrow-right"></i>
-            </li>
-
-            <li class="info-hover">
-            <i class="fa-solid fa-store"></i>
-            Shopping
-            <i class="fa-solid fa-arrow-right"></i>
-            </li>
-
-
-            <li class="info-hover">
-            <i class="fa-solid fa-bag-shopping"></i>
-            Online Shop
-            <i class="fa-solid fa-arrow-right"></i>
-            </li>
-        </ul>
+   
     </div>
-    </div>
-
+    <br>
+    <br>    
     <div class="regulations">
         <i>
         <span class="sp-reg">What are the current regulations at my destination?</span>
@@ -173,18 +200,26 @@
         </i>
         <button class="btn-reg">To the regulations</button>
     </div>
+    <br>
+
 
     <div class="latest-text">
-    <div>
-        <hr class="hr-2">
-        <br>
+        
+    <div>       
+        <div>
+            <hr class="hr">  
+        </div>
+            <br> 
         <i>
-        <h1>Latest FRA-News</h1>
-    </i>
+            <h1 class="lt-h1">Latest FRA-News</h1>
+        </i>
         <p>At a glance</p>
-    </div>
+        <br>
+        <br>
     </div>
 
+    </div>
+     
     <div class="latest">
         <div class="discount">
             <img class="img-latest" src="./assets/images/Gutschein Paradies2022.jpg" alt="5% parking discount">
@@ -193,7 +228,7 @@
             <hr>
              <br>
             <p class="latest-link">To the parking voucher offer  
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right sh"></i>
             </p>
         </div>
 
@@ -204,7 +239,7 @@
             <hr>
             <br>
             <p class="latest-link">To Hausmann's 
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right sh"></i>
             </p>
         </div>
 
@@ -215,12 +250,17 @@
             <hr>
             <br>
             <p class="latest-link">To car sharing  
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right sh"></i>
             </p>
         </div>
     </div>
 
     <div class="fr-on-shop">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <p class="shop-text">Frankfurt Airport Online Shop</p>
         <a href="#">
             <img class="shop-img" src="./assets/images/ClickCollect_EN_inkl.Subline.jpg">
@@ -245,19 +285,19 @@
             <h2 class="h2-footer"><i>Useful Links</i></h2>
             <ul>
                 <li>Frankfurt Airport Online Shop
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right sh2"></i>
                 </li>
                 <li>Flights
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right sh2"></i>
                 </li>
                 <li>Getting to the Airport
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right sh2"></i>
                 </li>
                 <li>Accessible Travel
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right sh2"></i>
                 </li>
                 <li>Frankfurt Airport Parking
-                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right sh2"></i>
                 </li>
             </ul>
         </div>
@@ -265,12 +305,23 @@
         <div class="infromation-footer">
             <h2 class="h2-footer"><i>Information</i></h2>
             <ul>
-                <li>Information on Covid-19</li>
-                <li>Download Center</li>
-                <li>FAQs</li>
-                <li>Contact & Feedback</li>
-                <li>Newsletter</li>
+                <li>Information on Covid-19
+                    <i class="fa-solid fa-arrow-right sh2"></i>
+                </li>
+                <li>Download Center
+                    <i class="fa-solid fa-arrow-right sh2"></i>
+                </li>
+                <li>FAQs
+                    <i class="fa-solid fa-arrow-right sh2"></i>
+                </li>
+                <li>Contact & Feedback
+                    <i class="fa-solid fa-arrow-right sh2"></i>
+                </li>
+                <li>Newsletter
+                    <i class="fa-solid fa-arrow-right sh2"></i>
+                </li>
                 <li>Jobs at Fraport AG
+                    <i class="fa-solid fa-arrow-right sh2"></i>
                 </li>
             </ul>
         </div>
@@ -278,23 +329,28 @@
         <div class="b2b">
             <h2 class="h2-footer"><i>B2B</i></h2>
             <ul>
-                <li>Fraport AG</li>
-                <li>Airlines</li>
-                <li>Cargo</li>
-                <li>Retail</li>
-                <li>Real Estate</li>
+                <li>Fraport AG
+                    <i class="fa-solid fa-arrow-right sh3"></i>
+                </li>
+                <li>Airlines
+                    <i class="fa-solid fa-arrow-right sh3"></i>
+                </li>
+                <li>Cargo
+                    <i class="fa-solid fa-arrow-right sh3"></i>
+                </li>
+                <li>Retail
+                    <i class="fa-solid fa-arrow-right sh3"></i>
+                </li>
+                <li>Real Estate
+                    <i class="fa-solid fa-arrow-right sh3"></i>
+                </li>
                 </li>
             </ul>
         </div>
 
     </div>
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            
         <div class="bottom-footer">
             <a href="#">Legal Notice</a>
             <a href="#">GTC</a>
@@ -304,16 +360,10 @@
             <br>
             <br>
             <br>
-            <br>
             <p class="copyright">&copy; 2004-2022 Fraport AG Frankfurt Airport Services Worldwide</p> 
         </div>
-
-
     </div>
 
-    
 </div>
-
-
 </body>
 </html>
