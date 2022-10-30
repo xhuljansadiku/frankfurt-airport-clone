@@ -1,8 +1,20 @@
+/*
+Per Desktop duhet me shtu tek Navigation Bar Dropdown menu,
+ndersa per Mobile  duhet me shtu nje Hamburger me dropdown menu
+dhe te Footer me shtu Dropdown gjithashtu.
+Dhe problem kam pas me fotot tek pjesa per mobile dhe i kam lene sic jane
+dhe foto del jasht px te parapare per tel.
+Mendoj qe ka disa mangesi  por besoj me shume se 90% e kam imitu.
+*/
+
+:root {
+    --main-color: #000091;
+  }
 
 body{
     width: 1280px;
     margin: 0px auto;
-    font-family: roboto,sans-serif;
+    font-family: roboto,sans-serif; 
     
 }
 
@@ -50,7 +62,6 @@ body{
 }
 
  
-
 /* Navigation Bar part. */
 .navigation-bar{
     display: flex;
@@ -62,6 +73,7 @@ body{
 .navbar {
     height: 50px; 
 }
+
 .navbar li{
     display: inline;
     padding: 0 10px;
@@ -74,7 +86,7 @@ body{
 
 .header-img-form h1{
    position: absolute;
-   background-color: #000091;
+   background-color: var(--main-color);
    color: white;
    width: 360px;
    height: 100px;
@@ -105,11 +117,19 @@ body{
 
 .form-inside{
     display: flex;
-    justify-content: space-evenly;
-    color: blue;
+    flex-direction: row;
+    color: var(--main-color);
+    width: 1000px;
     height: 60px;
     margin-bottom: 60px;
  
+}
+
+.dep-ar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
 }
 
 .form-inside > label{
@@ -134,7 +154,7 @@ body{
 }
 
 #search:hover{
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid var(--main-color);
     cursor: pointer;
 }
 
@@ -146,7 +166,7 @@ body{
 
 .btn{
     font-size: 26px;
-    color: blue;
+    color: var(--main-color);
     background-color: white;
     width: 50px;
     height: 50px;
@@ -155,7 +175,7 @@ body{
 }
 
 .btn:hover{
-    background-color: blue;
+    background-color: var(--main-color);
     color: white;
     cursor: pointer;
 }
@@ -178,18 +198,18 @@ body{
     color: grey;
 }
 .flight-serach-parking .parking:hover{
-    color: blue;
+    color: var(--main-color);
     cursor: pointer;
 }
 
 .tips{
-     
     display: flex;
     width: 1000px;
     height: 170px;
     color: white;
     background-color: rgba(228,130,26,255);
 }
+
 .tips-text{
     width: 80%;
     margin: 30px 0 0 100px;
@@ -200,12 +220,12 @@ font-size: 26px;
 }
 
 .btn-tips{
-    width: 200px;
-    height: 100px;
-    margin-right: 100px;
+    width: 190px;
+    height: 105px;
+    margin-right: 130px;
     margin-top: 26px;
     font-size: 16px;
-    color: blue;
+    color: var(--main-color);
 }
 
 .btn-tips:hover{
@@ -216,8 +236,8 @@ font-size: 26px;
 }
 
 
-
 /* Flight Number part. */
+
 .checkflight{
     display: flex;
     justify-content: space-around;
@@ -259,9 +279,11 @@ border: 1px solid black;
 float: left;
 margin-left: 140px;
 }
-    
+
+
 
 /*Info part. */
+
 .inforamation{
     display: grid;
     width: 1000px;
@@ -270,9 +292,11 @@ margin-left: 140px;
     justify-content: space-between;
     list-style: none;
 }
+
 .inforamation i{
     height: 50px;
 }
+
 .h1-out{
     font-size: 38px;
     margin-left: 100px;
@@ -280,6 +304,7 @@ margin-left: 140px;
     height: 50px;
     margin-bottom: 50px;
 }
+
 .info{
     display: flex;
     width: 1140px;
@@ -317,8 +342,9 @@ margin-left: 140px;
 .info-hover{
     padding: 10px;
 }
+
 .info-hover:hover{
-    background-color: blue;
+    background-color: var(--main-color);
     color: white !important;
     cursor: pointer;
 }
@@ -328,7 +354,9 @@ margin-left: 140px;
 }
 
 
+
 /*Regulations part.*/
+
 .regulations{
     margin: 0px auto;
     display: flex;
@@ -338,6 +366,7 @@ margin-left: 140px;
     background-color: #82af32;
      
 }
+
 .reg-text{
     width: 80%;
     
@@ -363,10 +392,10 @@ margin-left: 50px;
 }
 
 .btn-reg:hover{
-  background-color: blue;
-  color: white;
-  transition: 0,1s;
-  cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+    transition: 0,1s;
+    cursor: pointer;
 }
 
 .regulations i{
@@ -375,6 +404,7 @@ margin-top: 30px;
 
 
 /*Latest / Discount part.*/
+
 .latest-text {
     display: inline-flex;
     width: 1280px;
@@ -387,6 +417,7 @@ margin-top: 30px;
     padding-top: 10px;
     margin-bottom: 0px;
 }
+
 .latest-text p{
     font-size: 18px;
     padding-left: 240px;
@@ -412,6 +443,7 @@ margin-top: 30px;
     cursor: pointer;
 }
  
+
 /* Shops part. */
 
 .fr-on-shop{
@@ -430,8 +462,8 @@ margin-top: 30px;
     color: grey;
 }
 
-
 /*Footer*/
+
 .footer{
     background-color: rgba(0,0,145,255);
     color: white;
@@ -440,7 +472,6 @@ margin-top: 30px;
     flex-direction: column;
     width: 1280px;
     margin: 0px auto;
-    
 }
 
 .social-media{
@@ -449,12 +480,14 @@ margin-top: 30px;
     padding-left: 120px;
     margin: 0px;  
 }
+
 .social-media li{
     list-style-type: none;
     font-size: 32px;
     padding: 8px 8px;
     margin: 35px 0 45px 0;
 }
+
 .social-media a{
     color: white;
     padding: 10px;
@@ -469,10 +502,12 @@ margin-top: 30px;
 
     justify-content: flex-start;
 }
+
 .useful-links{
     margin-bottom: 10px;
    font-size: 15px;
 }
+
 .useful-links li{
     font-size: 15px;
     list-style-type: none;
@@ -485,10 +520,12 @@ margin-top: 30px;
 .infromation-footer{
     padding-left: 40px;
 }
+
 .infromation-footer li{
     list-style-type: none;
 
 }
+
 .infromation-footer li:hover{
  cursor: pointer;
 }
@@ -496,6 +533,7 @@ margin-top: 30px;
 .b2b{
     padding-left: 50px;
 }
+
 .b2b li{
     list-style-type: none;
 }
@@ -535,4 +573,634 @@ margin-top: 30px;
     float: right;
     padding-left: 130px;
     padding-top: 12px;
+}
+
+/*-----------------------------------------------------------------*/
+
+@media only screen and (max-width: 390px) {
+    /* For mobile phones: */
+
+:root {
+        --main-color: #000091;
+      }
+    
+    
+body{
+    width: 390px;
+    margin: 0px auto;
+    font-family: roboto,sans-serif;
+}
+
+.container{
+    background-color: ghostwhite;
+    width: 390px;
+    margin: 0px auto;
+}
+
+
+/* Header part. */
+
+.header{
+    display: flex; 
+}
+
+.lang-nav{
+   display: grid;
+   width: 195px;
+   height: 80px;
+    padding-left: 130px;
+}
+
+.icons-top {
+   width: 195px;
+    
+}
+
+.lang-nav .icons-top {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.icons-top i{
+    font-size: 26px;
+    padding-left: 1px;
+    
+}
+
+.icons-top ul{
+    padding: 0px;
+    color: rgb(49, 78, 221);
+}
+
+.icons-top ul:hover{
+     transform: scale(1.3);
+     transition: 0.3s;
+     cursor: pointer;
+}
+
+.logo-top{
+    height: 80px;
+
+}
+
+.logo{
+    margin-top: 15px;
+     margin-left: 30px;
+    width: 80px;
+    cursor: pointer;
+}
+
+
+/* Navigation Bar part. */
+
+.navigation-bar{
+   display: none;
+}
+
+.header-img-form{
+    position: relative;
+    background-size: unset;
+    
+}
+
+.header-img-form img{
+    margin-top: 80px;
+    width: 390px;
+    background-size: cover;
+    transform: scale(2);
+}
+
+.header-img-form h1{
+    position: absolute;
+    background-color: var(--main-color);
+    color: white;
+    width: 329px;
+    height: 43px;
+    font-size: 26px;
+    top: 230px;
+    left: 30px;
+    margin: 0 auto;
+}
+
+
+/* Flight Search part. */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    width: 390px;
+    height: 280px;
+    margin: 0px auto;
+    background-color: white;
+}
+
+.form h4 {
+    font-size: 22px;
+    color: rgb(33, 33, 193);
+    padding-left: 20px;
+}
+
+.form-inside{
+    display: flex;
+    flex-direction: column;
+    color: var(--main-color);
+    width: 390px;
+    height: 60px;
+    margin-bottom: 60px;
+ 
+}
+
+.dep-ar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 390px;
+}
+
+.dep-ar .just-4-cel{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 390px;
+    padding-left: 30px;
+}
+
+#departures{
+    width: 40px;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+#arr{
+    width: 40px;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+#search{
+    margin-top: 40px;
+    width: 350px;
+    border: transparent;
+}
+
+#search:hover{
+    border-bottom: 2px solid blue;
+    cursor: pointer;
+}
+
+#time{
+    width: 350px;
+    margin-top: 40px;
+    font-size: 18px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.btn{
+    /*Nuk di sesi ta ndryshoj ne mobile nga shigjeta ne text p.sh Search.
+    P.sh ne desktop te jete shigjete ne tel te jete Search.
+      */
+    margin-top: 65px;
+    font-size: 26px;
+    color: white;
+    background-color: #000091;
+    width: 350px;
+    height: 45px;
+    border: 1px solid blue;
+    border-radius: 0%;
+}
+
+.btn:hover{
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+.flight-serach-parking{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 30px;
+    
+}
+
+.flight-serach-parking i{
+    font-size: 15px;
+}
+
+.flight-serach{
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.flight-serach-parking .parking{
+    color: grey;
+}
+
+.flight-serach-parking .parking:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.parking{
+    margin-top: 0px;
+}
+
+.tips{
+    margin-top: 280px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 330px;
+    color: white;
+    background-color: rgba(228,130,26,255);
+}
+
+.tips-text{
+    width: 80%;
+    margin: 30px 0 0 30px;
+}
+
+.sp-tips{
+font-size: 26px;
+}
+
+.btn-tips{
+    width: 260px;
+    height: 45px;
+    margin-left: 40px;
+    margin-top: 70px;
+    font-size: 16px;
+    color: var(--main-color);
+    display: inline;
+}
+
+.btn-tips:hover{
+    background-color: var(--main-color);
+    color: white;
+    transition: 0,1s;
+    cursor: pointer;
+}
+
+
+/* Flight Number part. */
+
+.checkflight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0,0,145,255);
+    width: 330px;
+    height: 220px;
+    margin-top: 860px;
+    color: white;
+}
+
+.sp-check-fl{ 
+    font-weight: 900;
+    font-size: 34px;
+    margin-top: 0px;
+}
+
+.check-text{
+    flex-direction: column;
+    width: 350px;
+    height: 100px;
+    font-size: 15px;
+}
+
+#flight-number{
+    margin-top: 50px;
+    border: transparent;
+    background-color: var(--main-color);
+    color: white;
+    background: transparent;
+    width: 300px;
+    border-bottom: 1px solid white;
+}
+
+.fa-magnifying-glass{
+    font-size: 18px;
+}
+
+.hr{
+    margin-top: 30px;
+    width: 180px;
+    border: 1px solid black;
+    float: left;
+    margin-left: 30px;
+}
+    
+
+/*Info part. */
+
+.inforamation{
+    display: grid;
+    width: 390px;
+    height: 500px;
+    margin-left: 20px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.inforamation i{
+    height: 50px;
+}
+
+.h1-out{
+    font-size: 26px;
+    color: gray;
+    height: 50px;
+    margin: 10px 10px;
+    width: 330px;
+}
+
+.info{
+    display: flex;
+    width: 390px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-1{
+    width: 360px;
+    height: 300px;
+    align-items: flex-start;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+}
+
+.info-1 ul{
+    margin-top: 60px;
+    padding: 5px;
+    list-style: none;
+}
+
+.info-2{
+    margin-top: 100px;
+    width: 350px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+}
+
+.info-2 ul{
+    padding: 5px;
+    width: 350px;
+    list-style: none;
+}
+
+.info-hover{
+    padding: 10px;
+}
+.info-hover:hover{
+    background-color: var(--main-color);
+    color: white !important;
+    cursor: pointer;
+}
+
+.sh{
+   display: none;
+
+}
+
+
+/*Regulations part.*/
+
+.regulations{
+    margin-top: 280px;
+    margin-right: 15px;
+    display: flex;
+    width: 350px;
+    height: 274px;
+    color: white;
+    background-color: #82af32;
+    flex-direction: column;
+}
+
+.regulations > i{
+   width: 330px;
+   display: flex;
+   flex-direction: column;
+   height: 100px;
+   margin: 0 20px 0 20px;
+}
+
+.sp-reg{
+    width: 310px;
+    height: 50px;
+    font-size: 26px;
+    padding-right: 150px;
+    margin-left: 10px;
+}
+
+.reg-text{
+    margin-top: 50px;
+    width: 270px;
+    height: 100px !important;
+    font-size: 16px;
+    padding-left: 0px;
+    margin-left: 10px;
+}
+
+.btn-reg{
+    width: 310px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 80px;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    border: transparent;
+}
+
+.btn-reg:hover{
+    background-color: var(--main-color);
+    color: white;
+    transition: 0,1s;
+    cursor: pointer;
+}
+
+.regulations i{
+    margin-top: 30px;
+}
+
+
+/*Latest / Discount part.*/
+
+.latest-text {
+    display: flex;
+    width: 100px;
+    color: gray;
+    margin: 0px;
+}
+
+.latest-text{ 
+    margin-left: 0px;
+}
+
+.latest-text .lt-h1{
+    width: 350px;
+    font-size: 26px;
+    padding-left: 40px;
+}
+
+.latest-text p{
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.latest{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin: 0px auto;
+    justify-content: space-evenly;
+}
+
+.img-latest{
+    width: 300px;
+}
+
+.latest p{
+    width: 300px;
+}
+
+p.latest-link{
+    margin-top: 0px;
+}
+
+.latest-link:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+ 
+
+/* Shops part. */
+
+.fr-on-shop{
+    width: 390px;
+    margin: 0px auto;
+}
+
+.shop-img{
+    width: 390px;
+    margin-bottom: 150px;
+    transform: scale(2);
+    padding-left: 150px;
+}
+
+.shop-text{
+    float: right;
+    color: grey;
+}
+
+
+/*Footer*/
+
+.footer{
+    background-color: rgba(0,0,145,255);
+    color:#8c96c8;
+    font-size: 18px;;
+    display: flex;
+    height: 465px;
+    flex-direction: column;
+    width: 390px
+}
+ 
+.social-media{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding: 0px -0px;
+    margin: 0px;  
+}
+.social-media li{
+    list-style-type: none;
+    font-size: 32px;
+    padding: 8px 10px;
+    margin: 15px 0 15px 0;
+}
+.social-media a{
+    color: #8c96c8;
+    font-size: 18px;;
+    padding: 26px;
+    height: 50px;
+}
+
+.other-links{
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5;
+    padding-left: 0px;
+    justify-content: flex-start;
+}
+.useful-links{
+    height: 40px;
+    margin-bottom: 10px;  
+}
+
+.useful-links h2{
+    color: #8c96c8;
+    font-size: 18px;
+}
+
+.useful-links ul{
+    display: none ;
+}
+
+.infromation-footer{
+    height: 40px;
+    padding-left: 0px;
+}
+
+.infromation-footer ul{
+    display: none;
+}
+
+.infromation-footer h2{
+    color: #8c96c8;
+    font-size: 18px; 
+}
+
+.b2b{
+    padding-left: 0px;
+}
+
+.b2b ul{
+    display: none;
+}
+
+.b2b h2{
+    color: #8c96c8;
+    font-size: 18px;
+}
+
+.bottom-footer{
+    margin-top: 25px;
+    padding-left: 30px;
+    width: 290px;
+}
+
+.bottom-footer a{
+    color: gray;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.copyright{
+    padding-left: 5px;
+    color: gray;
+    font-size: 12px;
+    width: 390px;
+}
 }
