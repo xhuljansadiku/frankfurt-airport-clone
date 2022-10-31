@@ -778,7 +778,13 @@ body{
 
 .mobile{
     visibility: visible;
+    font-size: 18px;
+    width: 350px;
+    height: 45px;
+    padding: 10px 10px;
+    justify-content: baseline;
 }
+
 
 
 .btn{
@@ -880,7 +886,7 @@ font-size: 26px;
     background-color: rgba(0,0,145,255);
     width: 330px;
     height: 220px;
-    margin-top: 860px;
+    margin-top: 950px;
     color: white;
 }
 
