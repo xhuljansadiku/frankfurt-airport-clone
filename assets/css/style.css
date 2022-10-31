@@ -164,6 +164,16 @@ body{
     cursor: pointer;
 }
 
+
+.desktop{
+    visibility: visible;
+}
+
+.mobile{
+    visibility: hidden;
+}
+
+
 .btn{
     font-size: 26px;
     color: var(--main-color);
@@ -172,6 +182,7 @@ body{
     height: 50px;
     border: 1px solid blue;
     border-radius: 50%;
+    padding-top: 10px;
 }
 
 .btn:hover{
@@ -458,6 +469,7 @@ margin-top: 30px;
 }
 
 .shop-text{
+    margin-right: 10px;
     float: right;
     color: grey;
 }
@@ -580,6 +592,8 @@ margin-top: 30px;
 @media only screen and (max-width: 390px) {
     /* For mobile phones: */
 
+   
+
 :root {
         --main-color: #000091;
       }
@@ -664,11 +678,8 @@ body{
     
 }
 
-.header-img-form img{
-    margin-top: 80px;
-    width: 390px;
-    background-size: cover;
-    transform: scale(2);
+.header-img-form > img{
+    width: 100%;
 }
 
 .header-img-form h1{
@@ -759,6 +770,16 @@ body{
     border: transparent;
     cursor: pointer;
 }
+
+
+.desktop{
+    visibility: hidden;
+}
+
+.mobile{
+    visibility: visible;
+}
+
 
 .btn{
     /*Nuk di sesi ta ndryshoj ne mobile nga shigjeta ne text p.sh Search.
@@ -1092,10 +1113,8 @@ p.latest-link{
 }
 
 .shop-img{
-    width: 390px;
-    margin-bottom: 150px;
-    transform: scale(2);
-    padding-left: 150px;
+    width: 100%;
+    
 }
 
 .shop-text{
