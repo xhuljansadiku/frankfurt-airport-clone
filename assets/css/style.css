@@ -1,10 +1,7 @@
 /*
-Per Desktop duhet me shtu tek Navigation Bar Dropdown menu,
-ndersa per Mobile  duhet me shtu nje Hamburger me dropdown menu
-dhe te Footer me shtu Dropdown gjithashtu.
-Dhe problem kam pas me fotot tek pjesa per mobile dhe i kam lene sic jane
-dhe foto del jasht px te parapare per tel.
-Mendoj qe ka disa mangesi  por besoj me shume se 90% e kam imitu.
+For Desktop  Responsive the navigation bar need dropdown menu added with othes <li>.
+For Mobile Responsive needed a Hamburger with dropdown menu added,
+in footer part needed too a dropdown menu added.
 */
 
 :root {
@@ -680,6 +677,7 @@ body{
 
 .header-img-form > img{
     width: 100%;
+    height: auto;
 }
 
 .header-img-form h1{
@@ -1120,6 +1118,7 @@ p.latest-link{
 
 .shop-img{
     width: 100%;
+    height: auto;
     
 }
 
