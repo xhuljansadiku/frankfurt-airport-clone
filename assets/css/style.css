@@ -802,6 +802,8 @@ margin-right: 10px;
 /* Hidden for Language btn in Mobile */
 .mobile-h{
     visibility: hidden;
+    justify-content: baseline;
+    width: 0px;
 }
 /* Visible for Hamburger Bar in Mobile */
 .mobile-v{
