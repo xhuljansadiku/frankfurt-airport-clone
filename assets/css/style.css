@@ -60,6 +60,11 @@ body{
 
  
 /* Navigation Bar part. */
+
+.mobile3{
+    visibility: hidden;
+} 
+
 .navigation-bar{
     display: flex;
     justify-content: flex-end;
@@ -161,14 +166,22 @@ body{
     cursor: pointer;
 }
 
+/* Visible for Btn ">" in Desktop */
 
 .desktop{
     visibility: visible;
 }
-
+/* Hidden for Btn "Search" in Desktop */
 .mobile{
     visibility: hidden;
 }
+
+/* Hidden for Hamburger Bar in Desktop > */
+.mobile-v{
+    visibility: hidden;
+} 
+
+
 
 
 .btn{
@@ -619,11 +632,12 @@ body{
    display: grid;
    width: 195px;
    height: 80px;
-    padding-left: 130px;
+    padding-left: 100px;
 }
 
 .icons-top {
-   width: 195px;
+   width: 95px;
+margin-right: 10px;
     
 }
 
@@ -769,11 +783,12 @@ body{
     cursor: pointer;
 }
 
-
+/* Hidden for Btn ">" in Mobile */
 .desktop{
     visibility: hidden;
 }
 
+/* Visible for Btn "Search" in Mobile */
 .mobile{
     visibility: visible;
     font-size: 18px;
@@ -784,11 +799,18 @@ body{
 }
 
 
+/* Hidden for Language btn in Mobile */
+.mobile-h{
+    visibility: hidden;
+}
+/* Visible for Hamburger Bar in Mobile */
+.mobile-v{
+    visibility: visible;
+} 
+
+ 
 
 .btn{
-    /*Nuk di sesi ta ndryshoj ne mobile nga shigjeta ne text p.sh Search.
-    P.sh ne desktop te jete shigjete ne tel te jete Search.
-      */
     margin-top: 65px;
     font-size: 26px;
     color: white;
